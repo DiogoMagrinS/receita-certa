@@ -1,6 +1,7 @@
 :root {
     --cor-fundo:  #E0B084;
     --cor-texto:  #3D2B1F;
+    --cor-botao:  #FFCC80;
 }
 
 .cabecalho{
@@ -11,18 +12,28 @@
     align-items: center;
     height: 100px;
     border-bottom: 2px solid rgba(61,43,31,.2);
+    gap: 200px;
 }
 
 .logo{
-    position: absolute;
+    justify-content: space-between;
     left: 20px;
     width: 150px;
     height: auto;
+    align-items: baseline;
+}
+
+.pesquisa {
+    display: flex;
+    box-sizing: border-box;
 }
 
 .navegacao{
     display: flex;
     gap: 50px;
+    justify-content: center;
+    background-color: #FFCC80;
+    padding: 20px;
 }
 
 .navegacao a{
@@ -37,6 +48,14 @@
     color: #8B4513;
     transform: translateY(-3px);
 }
+
+.btn {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--cor-botao);
+}
+
+
 .receitas {
     background-color: #F7E7CE;
     text-align: center;
@@ -54,4 +73,69 @@
     width: 350px;
     height: auto;
     border-radius: 10px;
+}
+
+
+.texto{
+    width: 45%;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: #E0B084;
+}
+
+.sobre {
+    text-align:start;
+}
+
+.botao-contato{
+    width: 100%;             /* Ocupa toda a largura da coluna */
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FFCC80;
+    color: #3D2B1F;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.informacoes{
+    width: 20%;
+}
+.informacoes h2 {
+    margin-bottom: 30px;
+}
+
+.sobre{
+    width: 25%;
+}
+
+.dados{
+    display: flex;
+    gap: 40px; /* Espaço entre Telefone e E-mail */
+}
+
+.dados h4{
+    margin-bottom: 5px;
+}
+
+.dados p{
+    margin: 0;
+}
+
+.contato {
+    width: 10%;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.botao-contato {
+    width: 60%;
+    align-items: flex-start;
 }

@@ -10,20 +10,38 @@
 
 <body>
     <header class="cabecalho">
-        <img src="../images/logo.jpg" alt="logo" class="logo">
         <div>
-            <nav class="navegacao">
-                <a href="#">Doces</a>
-                <a href="#">Salgadas</a>
-                <a href="#">Vegano</a>
-            </nav>
+            <img src="../images/logo.jpg" alt="logo" class="logo">
+        </div>
+
+        <div class="pesquisa">
+            <input name="q" type="search" class="input search-input" value="" placeholder="Procure uma receita, um ingrediente, um tipo de prato ..." aria-label="Procure uma receita, um ingrediente, um tipo de prato" required="">
+        </div>
+
+        <div>
+            <label for="login.html" class="btn">Inscreva-se</label>
         </div>
 
     </header>
 
     <main>
         <article class="receitas">
-            <h1>Receitas Mais Famosas</h1>
+
+            <div>
+                <nav class="navegacao">
+                    <a href="#">Doces</a>
+                    <a href="#">Salgadas</a>
+                    <a href="#">Vegano</a>
+                    <a href="#">Sopas</a>
+                    <a href="#">Massas</a>
+                    <a href="#">Saiba Mais</a>
+                </nav>
+            </div>
+
+            <p>Bem vindo ao Receita-Certa, Aqui você encontra as melhores receitas da atualidade!</p>
+            
+
+            <h1>Receitas Mais Famosas:</h1>
             <div class="container-imagens">
                 <a href="https://www.gov.br/receitafederal/pt-br" target="_blank" rel="noopener noreferrer">
                     <img src="../images/receita.jpg" alt="Receita" class="imagens">
@@ -32,9 +50,61 @@
                 <a href="https://www.gov.br/receitafederal/pt-br" target="_blank" rel="noopener noreferrer">
                     <img src="../images/receita-medica.jpg" alt="Medica" class="imagens">
                 </a>
+
+                <a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/">
+                    <img src="../images/receita-empresa.jpg" alt="imagens" class="imagens">
+                </a>
+            </div>
+
+            <h2>Melhores Receitas</h2>
+
+            <div id="lista-receitas">
+                <!-- As receitas da API aparecerão aqui -->
             </div>
         </article>
     </main>
+
+    <footer class="rodape">
+
+        <article class="sobre">
+            <h2>Sobre o Receita Certa</h2>
+    
+            <p>
+                O Receita Certa é um site dedicado a compartilhar receitas práticas e
+                saborosas para todos os gostos. Nosso objetivo é inspirar pessoas a
+                cozinhar com mais facilidade, oferecendo receitas simples, saborosas e
+                acessíveis para o dia a dia.
+            </p>
+        </article>
+    
+        <!-- BOTÃO + COPYRIGHT CENTRAL -->
+        <div class="centro-rodape">
+            <button class="botao-contato">
+                Entre em Contato Conosco
+            </button>
+    
+            <p class="copy">
+                &copy; Todos os Direitos Reservados
+            </p>
+        </div>
+    
+        <article class="informacoes">
+            <h2>Nossas Informações</h2>
+    
+            <div class="dados">
+                <div>
+                    <h4>Telefone</h4>
+                    <p>(54) 99999-9999</p>
+                </div>
+    
+                <div>
+                    <h4>E-mail</h4>
+                    <p>contato@receitacerta.com</p>
+                </div>
+            </div>
+        </article>
+    
+    </footer>
 
 </body>
 
