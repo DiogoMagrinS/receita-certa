@@ -1,0 +1,57 @@
+:root {
+    --cor-fundo:  #E0B084;
+    --cor-texto:  #3D2B1F;
+}
+
+.cabecalho{
+    background-color: #E0B084;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-bottom: 2px solid rgba(61,43,31,.2);
+}
+
+.logo{
+    position: absolute;
+    left: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.navegacao{
+    display: flex;
+    gap: 50px;
+}
+
+.navegacao a{
+    text-decoration: none;
+    color: #3D2B1F;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.navegacao a:hover{
+    color: #8B4513;
+    transform: translateY(-3px);
+}
+.receitas {
+    background-color: #F7E7CE;
+    text-align: center;
+    padding: 20px;
+}
+
+.container-imagens {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 30px; 
+}
+
+.imagens {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
