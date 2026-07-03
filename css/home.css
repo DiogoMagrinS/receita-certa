@@ -22,21 +22,37 @@
 
 .navegacao{
     display: flex;
-    gap: 50px;
+    align-items: center;
+    gap: 40px;
 }
 
 .navegacao a{
     text-decoration: none;
-    color: #3D2B1F;
+    color: var(--cor-texto);
     font-size: 18px;
     font-weight: bold;
-    transition: .3s;
 }
 
 .navegacao a:hover{
-    color: #8B4513;
-    transform: translateY(-3px);
+    background-color: var(--cor-fundo);
+    color: white !important;
 }
+
+.btn{
+    background-color: #3D2B1F;
+    color: var(--cor-texto) !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: .3s;
+    gap: 35px;
+}
+
+.btn:hover{
+    background-color: #8B4513;
+    color: white !important;
+    transform: translateY(-2px);
+}
+
 .receitas {
     background-color: #F7E7CE;
     text-align: center;
@@ -54,4 +70,13 @@
     width: 350px;
     height: auto;
     border-radius: 10px;
+}
+
+.btn {
+    display:flex;
+    padding: 10px;
+    background-color: var(--cor-fundo);
+    color: black;
+    cursor: pointer;
+    justify-content: end;
 }
